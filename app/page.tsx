@@ -6,49 +6,50 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import AboutPage from "./about/page";
+import Image from "next/image";
 
 export default function Home() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-				<br />
-				<h1 className={title()}>
-					websites regardless of your design experience.
-				</h1>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
-				</h2>
-			</div>
+	<div>
+	<div className="flex flex-wrap justify-evenly gap-8">
+  <section className="flex flex-col justify-start  gap-4 py-1 pb-0 md:py-10 max-w-lg text-center ">
+  <div className="mb-md px-1 lg:pt-10 md:pt-1 md:pb-1"> 
+    <h1 className={title()}>All&nbsp;</h1>
+    <h1 className={title({ color: "green" })}>Kerala&nbsp;</h1><br />
+    <h1 className={title()}><span className="text-gradient">Computer Society&nbsp;</span></h1><br />
+    <h1 className={title({ color: "green" })}>Student&nbsp;Congress</h1>
+  </div>
 
-			<div className="flex gap-3">
-				<Link
-					isExternal
-					as={NextLink}
-					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Documentation
-				</Link>
-				<Link
-					isExternal
-					as={NextLink}
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link>
-			</div>
+  
 
-			<div className="mt-8">
-				<Snippet hideSymbol hideCopyButton variant="flat">
-					<span>
-						Get started by editing <Code color="primary">app/page.tsx</Code>
-					</span>
-				</Snippet>
-			</div>
-		</section>
+   
+  </section>
+
+  {/* Right Section (Image) */}
+  <div className="max-w-lg ">
+    {/* Add your image here */}
+	<section>
+		<Image src="/sample.png" width={500} height={500} alt="roboarm" />
+	</section>
+	
+   
+  </div>
+</div>
+<div className="flex gap-3  justify-center">
+      <Link
+        isExternal
+        as={NextLink}
+        href={siteConfig.links.docs}
+        className={buttonStyles({ color: "success", radius: "full", variant: "shadow" })}
+      >
+		<span style={{ color: "white" }}>
+        Register Now
+		</span>
+      </Link>
+      
+    </div>
+
+  </div>
 	);
 }
