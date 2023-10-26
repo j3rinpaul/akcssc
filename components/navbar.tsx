@@ -15,7 +15,7 @@ import { useState } from "react";
 import { siteConfig } from "@/config/site";
 import clsx from "clsx";
 import NextLink from "next/link";
-
+import RegisterIcon from "../public/verify.png"
 import { GithubIcon, HeartFilledIcon } from "@/components/icons";
 import { ThemeSwitch } from "@/components/theme-switch";
 
@@ -62,19 +62,19 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
         </NavbarItem>
 
         <NavbarItem className="hidden md:flex">
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
+            className="text-sm font-normal  text-default-600 bg-default-100"
             href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
+            // startContent={"H"}
             variant="flat"
           >
-            Sponsor
+            <span className="success">Register</span>
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -83,7 +83,7 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
           <GithubIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
 
