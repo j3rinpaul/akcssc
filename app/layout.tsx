@@ -1,3 +1,4 @@
+"use client";
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -6,6 +7,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export const metadata: Metadata = {
 	title: {
@@ -30,6 +32,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
+		<ParallaxProvider>
 		<html lang="en" suppressHydrationWarning>
 			<head />
 			<body
@@ -39,6 +42,7 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+					
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
 						<main className="container mx-auto max-w-7xl sm:pt-10 pt-16 lg:px-6 px-2flex-grow">
@@ -49,5 +53,6 @@ export default function RootLayout({
 				</Providers>
 			</body>
 		</html>
+		</ParallaxProvider>
 	);
 }

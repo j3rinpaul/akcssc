@@ -1,3 +1,4 @@
+"use client";
 import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
@@ -10,6 +11,8 @@ import { GithubIcon } from "@/components/icons";
 import Image from "next/image";
 import { Container } from "postcss";
 import AboutPage from "./about/page";
+import AboutAkcs from "./aboutakcs/page";
+import CardList from "./speakers/page";
 
 export default function Home() {
 
@@ -45,7 +48,7 @@ export default function Home() {
 	<section >
       <div >
         {/* <div className="absolute w-[40%] h-[35%]  bg-gradient-to-r from-gray-700"/> */}
-        <Image src="/anoth.jpg" className="relative" width={500} height={500} alt="roboarm" />
+        <Image src="/anoth.png" className="relative" width={500} height={500} alt="roboarm" />
       </div>
 	</section>
 	
@@ -69,6 +72,18 @@ export default function Home() {
     <div className="pt-16 mt-14 mb-16 pl-3 pr-2 lg:pl-0" id="about">
       <section>
         <AboutPage/>
+      </section>
+    </div>
+
+    <div>
+      <section>
+        <AboutAkcs/>
+      </section>
+    </div>
+
+    <div>
+      <section>
+        <CardList/>
       </section>
     </div>
 
