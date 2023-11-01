@@ -7,7 +7,7 @@ import { title } from "@/components/primitives";
 const jsonData = [
   {
     title: "Card 1",
-    description: "Singularity",
+    description: "Singularity-AI",
     imageSrc: "/ai.jpg",
   },
   {
