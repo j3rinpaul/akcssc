@@ -7,27 +7,23 @@ import { title } from "@/components/primitives";
 const jsonData = [
   {
     title: "Card 1",
-    description: "AI based Events",
+    description: "Singularity",
     imageSrc: "/ai.jpg",
   },
   {
     title: "Card 2",
-    description: "SOT based Events",
+    description: "Start Ups of Tommorrow",
     imageSrc: "/sot.jpg",
   },
-  {
-    title: "Card 3",
-    description: "SOT based Events",
-    imageSrc: "/sot.jpg",
-  },
+ 
   // Add more objects for additional cards as needed
 ];
 
 const CardList = () => {
   return (
     <div className="pt-10 ">
-      <div className=" lg:pl-16 lg:ml-16">
-        <h1 className={title()}>Events</h1>
+      <div className=" lg:pl-16 lg:ml-16 md:pl-16 md:ml-16 pl-10">
+        <h1 className={title()}>Tracks</h1>
       </div>
       <div className="flex flex-wrap gap-8 pt-10 justify-center sm:py-5">
         {jsonData.map((cardData, index) => (

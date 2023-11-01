@@ -13,6 +13,7 @@ import PricingLayout from "./pricing/layout";
 import PricingPage from "./pricing/page";
 import TicketsPage from "./pricing/page";
 import PricingCards from "./pricing/page";
+import Aboutcsks from "./aboutcsks/page";
 
 export default function Home() {
 
@@ -34,7 +35,7 @@ export default function Home() {
     <h1 className={title()}><span style={textGradientStyle}>Kerala&nbsp;</span></h1><br />
     <h1 className={title()}>Computer Society&nbsp;</h1><br />
     <h1 className={title()}><span style={textGradientStyle}>Student&nbsp;Convention</span></h1>
-    <h2 className={subtitle()}>November 23,25 2023</h2>
+    <h2 className={subtitle()}>November 24 - 26 2023</h2>
   </div>
 
   
@@ -48,7 +49,7 @@ export default function Home() {
 	<section >
       <div >
         {/* <div className="absolute w-[40%] h-[35%]  bg-gradient-to-r from-gray-700"/> */}
-        <Image src="/anoth.png" className="relative" width={500} height={500} alt="roboarm" />
+        <Image src="/sample.png" className="relative" width={500} height={500} alt="roboarm" />
       </div>
 	</section>
 	
@@ -59,11 +60,11 @@ export default function Home() {
       <Link
         isExternal
         as={NextLink}
-        href={siteConfig.links.docs}
+        href={"#register"}
         className={buttonStyles({ color: "success", radius: "full", variant: "shadow" })}
       >
 		<span style={{ color: "white" }}>
-        Register Now
+        Register Early Bird
 		</span>
       </Link>
       
@@ -80,6 +81,12 @@ export default function Home() {
         <AboutAkcs/>
       </section>
     </div>
+    
+    <div>
+      <section className="pr-5 pt-10 pl-5">
+        <Aboutcsks/>
+      </section>
+    </div>
 
     <div>
       <section className="pr-5 pl-2 lg:pl-0 lg:pr-0">
@@ -87,8 +94,8 @@ export default function Home() {
       </section>
     </div>
 
-    <div>
-      <section className="m-5">
+    <div  className="m-5"  id="register">
+      <section>
         <PricingCards/>
       </section>
     </div>

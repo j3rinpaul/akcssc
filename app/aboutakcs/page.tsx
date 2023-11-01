@@ -2,10 +2,17 @@ import { subtitle, title } from "@/components/primitives";
 import Image from "next/image";
 
 export default function AboutAkcs() {
+
+	
+		const textGradientStyle = {
+		background: "-webkit-linear-gradient(45deg, #FFFFFF, #17c964, #17c964,#FFFFFF)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+	  };
   return (
-    <div>
-      <div className="lg:ml-16 mt-0 pt-1 pl-5 lg:pl-0 mb-5 lg:px-2">
-        <h1 className={title()}>Meet our host</h1>
+    <div className="md:ml-16 md:pl-10 lg:pl-2">
+      <div className="lg:ml-4 mt-0 pt-1 pl-5 lg:pl-0 mb-5 lg:px-2">
+        <h1 className={title()}>Meet our host - <span style={textGradientStyle}> GECW</span></h1>
       </div>
       <div className="flex flex-col lg:flex-row justify-center gap-8 lg:py-0">
         {/* Left Section (Text) */}
@@ -36,7 +43,7 @@ export default function AboutAkcs() {
           </div>
         </section>
         {/* Right Section (Image) */}
-        <div className="max-w-lg flex-row pt-16 pl-5 pr-5 lg:pr-0 lg:pl-0">
+        <div className="max-w-lg flex-row pt-10 lg:pt-16 md:pt-2 pl-5 pr-5 lg:pr-0 lg:pl-0">
           {/* Add your image here */}
           <section className="lg:pt-10">
             <div>
@@ -58,3 +65,5 @@ export default function AboutAkcs() {
     </div>
   );
 }
+
+

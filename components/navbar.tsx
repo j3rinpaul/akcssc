@@ -70,7 +70,7 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal  text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
+            href={"register link"}
             // startContent={"H"}
             variant="flat"
           >
@@ -80,9 +80,9 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github} aria-label="Github">
+        {/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
           <GithubIcon className="text-default-500" />
-        </Link>
+        </Link> */}
         {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
@@ -96,7 +96,7 @@ export const Navbar = () => {
                   index === activeLink
                     ? "success"
                     : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
+                    ? "foreground"
                     : "foreground"
                 }
                 href="#"
