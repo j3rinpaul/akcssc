@@ -8,8 +8,8 @@ export default function Aboutcsks() {
 	  };
 	return (
 	<div className="pl-2">
-		<div className="lg:ml-16 mt-0 pt-1 pl-5 md:ml-16 md:pl-16 lg:pl-10 mb-5 lg:px-2">
-			<h1 className={title()}>About <span style={textGradientStyle}>CSKS</span></h1>
+		<div className="lg:ml-16 mt-0 pt-1 pl-5 md:ml-16 md:pt-10 md:pb-5 md:pl-16 lg:pl-10 mb-5 lg:px-2">
+			<h1 className={title()}>About <span style={textGradientStyle}>IEEE Computer Society Kerala Chapter</span></h1>
 		</div>
 		<div className="flex flex-wrap justify-evenly gap-8 pt-0">
 			<section >

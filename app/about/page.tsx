@@ -8,6 +8,7 @@ export default function AboutPage() {
 	  };
 	return (
 	<div className="pl-2">
+		
 		<div className="lg:ml-16 mt-0 pt-1 pl-5 md:ml-16 md:pl-16 lg:pl-10 mb-5 lg:px-2">
 			<h1 className={title()}>About <span style={textGradientStyle}>AKCSSC</span></h1>
 		</div>

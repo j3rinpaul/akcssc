@@ -10,11 +10,11 @@ export default function AboutAkcs() {
 		WebkitTextFillColor: "transparent",
 	  };
   return (
-    <div className="md:ml-16 md:pl-10 lg:pl-2">
-      <div className="lg:ml-4 mt-0 pt-1 pl-5 lg:pl-0 mb-5 lg:px-2">
-        <h1 className={title()}>Meet our host - <span style={textGradientStyle}> GECW</span></h1>
+    <div className="md:ml-16 md:pl-16 lg:pl-2">
+      <div className="lg:ml-2 mt-0 pt-1 pl-0 lg:pl-0 mb-2 lg:px-2">
+        <h1 className={title()}>Meet our host - <span style={textGradientStyle}> Government Engineering College Wayanad</span></h1>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center gap-8 lg:py-0">
+      <div className="flex flex-col lg:flex-row md:pl-16 justify-center gap-8 lg:py-0">
         {/* Left Section (Text) */}
         <section className="flex flex-col justify-start gap-4 py-1 pb-0 md:py-16 max-w-xl text-center">
           <div className="mb-md px-1 lg:pt-0 md:pt-1 md:pb-1">

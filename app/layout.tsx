@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
 	return (
 		<ParallaxProvider>
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" suppressHydrationWarning  title="AKCSSC" >
 			<head />
 			<body
 				className={clsx(
