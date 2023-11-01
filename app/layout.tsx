@@ -8,6 +8,7 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { ParallaxProvider } from "react-scroll-parallax";
+import FooterComp from "./docs/page";
 
 export const metadata: Metadata = {
 	title: {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 	},
 	description: siteConfig.description,
 	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "white" },
+		
 		{ media: "(prefers-color-scheme: dark)", color: "black" },
 	],
 	icons: {
@@ -45,7 +46,7 @@ export default function RootLayout({
 					
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-7xl sm:pt-10 pt-16 lg:px-6 px-2flex-grow">
+						<main className="container mx-auto max-w-7xl sm:pt-10 pt-16 lg:px-6 px-1 flex-grow">
 							{children}
 						</main>
 						

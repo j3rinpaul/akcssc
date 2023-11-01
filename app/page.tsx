@@ -1,18 +1,18 @@
 "use client";
-import NextLink from "next/link";
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
+import { subtitle, title } from "@/components/primitives";
 import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
-
+import { Link } from "@nextui-org/link";
+import { CircularProgress } from "@nextui-org/react";
+import { button as buttonStyles } from "@nextui-org/theme";
 import Image from "next/image";
-import { Container } from "postcss";
+import NextLink from "next/link";
 import AboutPage from "./about/page";
 import AboutAkcs from "./aboutakcs/page";
-import CardList from "./speakers/page";
+import CardList from "./Events/page";
+import PricingLayout from "./pricing/layout";
+import PricingPage from "./pricing/page";
+import TicketsPage from "./pricing/page";
+import PricingCards from "./pricing/page";
 
 export default function Home() {
 
@@ -28,8 +28,8 @@ export default function Home() {
 	return (
 	<div>
 	<div className="flex flex-wrap justify-evenly gap-8 lg:py-16">
-  <section className="flex flex-col justify-start  gap-4 py-1 pb-0 md:py-16 max-w-3xl text-center ">
-  <div className="mb-md px-1 lg:pt-16 md:pt-1 md:pb-1"> 
+  <section className="flex flex-col justify-start  gap-4 py-0 pb-0 md:py-16 max-w-3xl text-center ">
+  <div className="mb-md px-0 lg:pt-16 md:pt-1 md:pb-1"> 
     <h1 className={title()}>All&nbsp;</h1>
     <h1 className={title()}><span style={textGradientStyle}>Kerala&nbsp;</span></h1><br />
     <h1 className={title()}>Computer Society&nbsp;</h1><br />
@@ -43,7 +43,7 @@ export default function Home() {
   </section>
 
   {/* Right Section (Image) */}
-  <div className="max-w-lg pl-2 pr-2 lg:pr-0 lg:pl-0">
+  <div className="max-w-lg pl-8 pr-8 lg:pr-0 lg:pl-0 ">
     {/* Add your image here */}
 	<section >
       <div >
@@ -55,7 +55,7 @@ export default function Home() {
    
   </div>
 </div>
-<div className="flex gap-3 pt-2  justify-center">
+<div className="flex gap-3 pt-2 mb-10 justify-center">
       <Link
         isExternal
         as={NextLink}
@@ -69,21 +69,27 @@ export default function Home() {
       
     </div>
 
-    <div className="pt-16 mt-14 mb-16 pl-3 pr-2 lg:pl-0" id="about">
+    <div className="pt-16 mt-16 pb-10 mb-16 pl-5 pr-5 lg:pl-0" id="about">
       <section>
         <AboutPage/>
       </section>
     </div>
 
     <div>
-      <section>
+      <section className="pr-5 pl-5">
         <AboutAkcs/>
       </section>
     </div>
 
     <div>
-      <section>
+      <section className="pr-5 pl-2 lg:pl-0 lg:pr-0">
         <CardList/>
+      </section>
+    </div>
+
+    <div>
+      <section className="m-5">
+        <PricingCards/>
       </section>
     </div>
 
