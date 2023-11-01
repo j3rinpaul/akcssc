@@ -10,22 +10,22 @@ import clsx from "clsx";
 import { ParallaxProvider } from "react-scroll-parallax";
 import FooterComp from "./docs/page";
 
-export const metadata: Metadata = {
-	title: {
-		default: siteConfig.name,
-		template: `%s - ${siteConfig.name}`,
-	},
-	description: siteConfig.description,
-	themeColor: [
+// export const metadata: Metadata = {
+// 	title: {
+// 		default: siteConfig.name,
+// 		template: `%s - ${siteConfig.name}`,
+// 	},
+// 	description: siteConfig.description,
+// 	themeColor: [
 		
-		{ media: "(prefers-color-scheme: dark)", color: "black" },
-	],
-	icons: {
-		icon: "/favicon.ico",
-		shortcut: "/favicon-16x16.png",
-		apple: "/apple-touch-icon.png",
-	},
-};
+// 		{ media: "(prefers-color-scheme: dark)", color: "black" },
+// 	],
+// 	icons: {
+// 		icon: "/favicon.ico",
+// 		shortcut: "/favicon-16x16.png",
+// 		apple: "/apple-touch-icon.png",
+// 	},
+// };
 
 export default function RootLayout({
 	children,
