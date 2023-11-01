@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import { title } from "@/components/primitives";

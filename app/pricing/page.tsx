@@ -9,18 +9,19 @@ const PricingCards = () => {
 	// 	price: "$149",
 	// 	features: [""],
 	//   },
-    {
-      image: "https://i.imgur.com/Ql4jRdB.png",
-      title: "IEEE CS Member",
-      price: "$149",
-      features: [""],
-    },
+    
     {
       image: "https://i.imgur.com/pJNFEHR.png",
       title: "IEEE Member",
       price: "$149",
       features: [""],
     },
+	{
+		image: "https://i.imgur.com/Ql4jRdB.png",
+		title: "IEEE CS Member",
+		price: "$149",
+		features: [""],
+	  },
     {
       image: "https://i.imgur.com/Hg0sUJP.png",
       title: "Non-IEEE Member",
