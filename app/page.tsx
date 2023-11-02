@@ -10,11 +10,19 @@ import CardList from "./Events/page";
 import PricingCards from "./pricing/page";
 import Aboutcsks from "./aboutcsks/page";
 import Head from "next/head";
+import Maps from "./blog/page";
 
 export default function Home() {
   const dissolvingEffectStyle = {
     filter:
       "linear-gradient(90deg, transparent, transparent 20%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0.5) 60%, transparent 80%, transparent)",
+  };
+
+  const handleDownload = () =>{
+      const downloadLink = document.createElement('a');
+      downloadLink.href = "/brouchure.pdf";
+      downloadLink.download = "brouchure.pdf";
+      downloadLink.click();
   };
 
   const textGradientStyle = {
@@ -64,7 +72,7 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div className="flex gap-3 pt-2 mb-10 justify-center">
+      <div className="flex gap-3 pt-10 lg:pt-3 pr-2 mb-10 justify-center">
         <Link
           isExternal
           as={NextLink}
@@ -75,7 +83,20 @@ export default function Home() {
             variant: "shadow",
           })}
         >
-          <span style={{ color: "white" }}>Register Early Bird</span>
+          <span style={{ color: "white" }}>Register Now</span>
+        </Link>
+        <Link
+
+          
+          onClick={handleDownload}
+          href={""}
+          className={buttonStyles({
+            color: "success",
+            radius: "full",
+            variant: "shadow",
+          })}
+        >
+          <span style={{ color: "white" }}>Brouchure</span>
         </Link>
       </div>
 
@@ -102,6 +123,12 @@ export default function Home() {
           <CardList />
         </section>
       </div>
+{/* 
+      <div>
+        <section>
+          <Maps />
+        </section>
+      </div> */}
 
       <div className="m-5" id="register">
         <section>

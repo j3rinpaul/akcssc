@@ -14,7 +14,7 @@ export default function Aboutcsks() {
 		<div className="flex flex-wrap justify-evenly gap-8 pt-0">
 			<section >
 					<div className="lg:pt-16 pl-5 pr-5">
-						<Image src="/akcssc.jpeg" className="relative" width={500} height={500} alt="akcssc"
+						<Image src="/csks.jpeg" className="relative" width={500} height={500} alt="akcssc"
 						 style={{
 							borderRadius: '30px', // Make the edges curved
 							boxShadow: '6px 6px 0px 0px  #17c964', // Add a green drop shadow
