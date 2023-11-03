@@ -34,11 +34,11 @@ export default function Home() {
   return (
     <div>
        <Head>
-        <title>My page title</title>
+        <title>Akcssc</title>
         <meta property="og:title" content="All kerala computer society student convention" key="title" />
       </Head>
      
-      <div className="flex flex-wrap justify-evenly gap-8 lg:py-16">
+      <div className="flex flex-wrap justify-evenly gap-8 lg:py-10">
         <section className="flex flex-col justify-start  gap-4 py-0 pb-0 md:py-16 max-w-3xl text-center ">
           <div className="mb-md px-0 lg:pt-16 md:pt-1 md:pb-1">
             <h1 className={title()}>All&nbsp;</h1>
