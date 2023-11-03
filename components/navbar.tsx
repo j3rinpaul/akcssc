@@ -10,14 +10,11 @@ import {
   NavbarMenuToggle,
   Navbar as NextUINavbar,
 } from "@nextui-org/navbar";
-import { link as linkStyles } from "@nextui-org/theme";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
-import clsx from "clsx";
 import NextLink from "next/link";
-import RegisterIcon from "../public/verify.png"
-import { GithubIcon, HeartFilledIcon } from "@/components/icons";
-import { ThemeSwitch } from "@/components/theme-switch";
+import Image from "next/image";
+import logo from "/public/logo.png";
 
 
 
@@ -34,10 +31,9 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky" height={"5rem"}>
-      <NavbarBrand as="li" className="gap-3 max-w-fit">
-        <NextLink className="flex justify-start items-center gap-1" href="/">
-
-          <p className="font-bold text-inherit">AKCSSC</p>
+      <NavbarBrand as="li" className="gap-3 pt-10 max-w-screen-xl">
+        <NextLink className="flex flex-col justify-start items-center gap-1" href="/">
+        <Image src={logo} alt="brand" width={100} height={50} />
         </NextLink>
       </NavbarBrand>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">

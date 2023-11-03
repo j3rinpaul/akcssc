@@ -1,29 +1,40 @@
 "use client";
+import { title } from "@/components/primitives";
+import Image from "next/image";
 
-import { Footer } from "flowbite-react";
+function Sponser() {
+  const list = [
+   
+    {
+      img: "/sblogo.png",
+    },
+    {
+      img: "/ieeelogo.png",
+    }, {
+      img: "/cslogo.png",
+    },
+  ];
 
-function FooterComp() {
   return (
-    <Footer container>
-      <div className="w-full text-center">
-        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <Footer.Brand
-            href="https://flowbite.com"
-            src="/akcssc.jpg"
-            alt="Flowbite Logo"
-            name="Flowbite"
-          />
-          <Footer.LinkGroup>
-            <Footer.Link href="#">About</Footer.Link>
-            <Footer.Link href="#">Privacy Policy</Footer.Link>
-            <Footer.Link href="#">Licensing</Footer.Link>
-            <Footer.Link href="#">Contact</Footer.Link>
-          </Footer.LinkGroup>
-        </div>
-        <Footer.Divider />
-        <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+    <div className="pb-16">
+      <div className="flex justify-center pt-5 pb-5">
+        <h1 className={title()}>Sponsers</h1>
       </div>
-    </Footer>
+      <div className="flex gap-4 lg:flex-row flex-col items-center justify-center">
+        {list.map((item, index) => (
+          <div key={index} className="flex items-center">
+            <Image
+            style={{borderRadius:"10px"}}
+              width={100}
+              height={100}
+              alt="sponser"
+              className="w-[200px] bg-slate-300 object-scale-down h-[80px]"
+              src={item.img}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
-export default FooterComp
+export default Sponser;

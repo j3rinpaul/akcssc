@@ -11,6 +11,7 @@ import PricingCards from "./pricing/page";
 import Aboutcsks from "./aboutcsks/page";
 import Head from "next/head";
 import Maps from "./blog/page";
+import Sponser from "./docs/page";
 
 export default function Home() {
   const dissolvingEffectStyle = {
@@ -123,18 +124,25 @@ export default function Home() {
           <CardList />
         </section>
       </div>
-{/* 
+
+      <div >
+        <section >
+            <Sponser/>
+        </section>
+      </div>
+
+
+      {/* <div className="m-5" id="register">
+        <section>
+          <PricingCards />
+        </section>
+      </div> */}
+      {/* 
       <div>
         <section>
           <Maps />
         </section>
       </div> */}
-
-      <div className="m-5" id="register">
-        <section>
-          <PricingCards />
-        </section>
-      </div>
     </div>
   );
 }
