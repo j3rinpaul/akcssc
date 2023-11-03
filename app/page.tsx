@@ -72,7 +72,7 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div className="flex gap-3 pt-10 lg:pt-3 pr-2 mb-10 justify-center">
+      <div className="flex gap-3 pt-8 lg:pt-3 pr-2 mb-10 justify-center">
         <Link
           isExternal
           as={NextLink}
