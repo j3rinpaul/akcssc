@@ -9,7 +9,7 @@ export default function AboutPage() {
 	return (
 	<div className="pl-2">
 		
-		<div className="lg:ml-16 mt-0 pt-1 pl-5 md:ml-16 md:pl-16 lg:pl-10 mb-5 lg:px-2">
+		<div className="flex justify-center pt-5 pb-5">
 			<h1 className={title()}>About <span style={textGradientStyle}>AKCSSC</span></h1>
 		</div>
 		<div className="flex flex-wrap justify-evenly gap-8 pt-0">
@@ -27,7 +27,7 @@ export default function AboutPage() {
 
 			<div className="max-w-lg pl-2 lg:pl-0 ">
 			<section className="flex flex-row justify-start  gap-4 py-1 pb-0 md:py-10 max-w-6xl  ">
-				<div className="mb-md px-1 lg:pt-4 md:pt-1 md:pb-1 text-center"> 
+				<div className="mb-md px-1 lg:pt-4 md:pt-1 md:pb-1 text-justify"> 
 					<h1>The All Kerala Computer Society Student Convention (AKCSSC) stands as the flagship event of the IEEE Computer Society Kerala Chapter, held annually to ignite inspiration among IEEE CS members and enrich their technical skills and knowledge. AKCSSC&apos;23 continues this tradition, striving to unite dedicated students from across Kerala, representing a diverse range of interests under one roof. We extend a warm invitation to all AI enthusiasts and Entrepreneurs to come together, connect, learn, and grow.
 
 <br/>This techno-managerial symposium is a unique blend of soft skills, networking, and professionalism, meticulously crafted to empower volunteers in an environment where the realm of possibilities knows no bounds. It&apos;s a vibrant synergy of technology and innovation, all harmonized through networking and the art of connecting individuals from all corners of Kerala.

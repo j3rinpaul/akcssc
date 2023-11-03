@@ -20,25 +20,25 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/pJNFEHR.png",
       title: "IEEE Member",
-      price: "₹ 900",
+      price: " ",
       features: [""],
     },
 	{
 		image: "https://i.imgur.com/Ql4jRdB.png",
 		title: "IEEE CS Member",
-		price: "₹ 800",
+		price: " ",
 		features: [""],
 	  },
     {
       image: "https://i.imgur.com/Hg0sUJP.png",
       title: "Non-IEEE Member",
-      price: "₹ 1000",
+      price: " ",
       features: [""],
     },
   ];
   return (
     <div className="w-full py-[10rem] lg:max-h-[25rem] px-4 " >
-		<div className="mb-5 lg:ml-16 lg:pl-10"> 
+		<div className="flex justify-center pt-5 pb-5"> 
 			<h1 className={title()} >Ticket - Early Bird</h1>
 		</div>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 ">

@@ -22,9 +22,10 @@ const jsonData = [
 const CardList = () => {
   return (
     <div className="pt-10 ">
-      <div className=" lg:pl-16 lg:ml-16 md:pl-16 md:ml-16 pl-10">
-        <h1 className={title()}>Tracks</h1>
-      </div>
+     <div className="flex justify-center pt-5 pb-5">
+  <h1 className={title()}>Tracks</h1>
+</div>
+
       <div className="flex flex-wrap gap-8 pt-10 justify-center sm:py-5">
         {jsonData.map((cardData, index) => (
           <div key={index} className="mr-4 ml-10" style={{ width: "400px" }}>
