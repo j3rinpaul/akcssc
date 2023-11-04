@@ -14,7 +14,7 @@ const jsonData = [
   },
   {
     title: "Card 2",
-    description: "Start Ups of Tommorrow",
+    description: "Startups of Tomorrow",
     imageSrc: "/sot.jpg",
   },
 
