@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import React from "react";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import { title } from "@/components/primitives";
 import KnowMoreAI from "../Know/page";
 import Link from "next/link";
-
 
 // Assuming your JSON data looks something like this:
 const jsonData = [
@@ -18,16 +17,16 @@ const jsonData = [
     description: "Start Ups of Tommorrow",
     imageSrc: "/sot.jpg",
   },
- 
+
   // Add more objects for additional cards as needed
 ];
 
 const CardList = () => {
   return (
     <div className="pt-10 ">
-     <div className="flex justify-center pt-5 pb-5">
-  <h1 className={title()}>Tracks</h1>
-</div>
+      <div className="flex justify-center pt-5 pb-5">
+        <h1 className={title()}>Tracks</h1>
+      </div>
 
       <div className="flex flex-wrap gap-8 pt-10 justify-center sm:py-5">
         {jsonData.map((cardData, index) => (
@@ -40,7 +39,13 @@ const CardList = () => {
                 src={cardData.imageSrc}
                 width={400}
               />
-              <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%-_8px)] shadow-small ml-1 z-10">
+              <CardFooter className="flex justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%-_8px)] shadow-small ml-1 z-10">
+                <p className="text-tiny text-white/80 text-center">
+                  {cardData.description}
+                </p>
+              </CardFooter>
+
+              {/* <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%-_8px)] shadow-small ml-1 z-10">
                 <p className="text-tiny text-white/80">{cardData.description}</p>
                 <Button
                 
@@ -54,7 +59,7 @@ const CardList = () => {
                   Know More
                   
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </div>
         ))}

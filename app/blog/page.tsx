@@ -8,14 +8,12 @@ function Footer() {
   const iconsTab = [
     { icon: <FaFacebookF /> },
     { icon: <AiFillLinkedin /> },
-    { icon: <AiOutlineLink/> },
     { icon: <AiFillInstagram /> },
   ];
 
   const Links = [
     { link: "https://www.facebook.com/IEEECSKS/" },
     { link: "https://www.linkedin.com/company/ieeecsks" },
-    { link: "https://www.cs.ieeekerala.com" },
     { link: "https://www.instagram.com/ieeecsks/" },
   ]
   return (
@@ -83,11 +81,7 @@ function Footer() {
               </p>
               </Link>
               
-              <Link href={"www.facebook.com"}>
-              <p className="text-[16px] hover:text-green-400 cursor-pointer text-[#646464] font-medium hover:font-bold">
-                IEEE Computer Society Kerala Section
-              </p>
-              </Link>
+             
              
             </div>
 
