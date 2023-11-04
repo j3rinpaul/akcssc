@@ -52,7 +52,7 @@ export default function Home() {
               <span style={textGradientStyle}>Kerala&nbsp;</span>
             </h1>
             <br />
-            <h1 className={title()}>Computer Society&nbsp;</h1>
+            <h1 className={title()}>Computer Society&nbsp; </h1>
             <br />
             <h1 className={title()}>
               <span style={textGradientStyle}>Student&nbsp;Convention</span>
