@@ -18,7 +18,7 @@ function Sponser() {
   return (
     <div className="pb-16">
       <div className="flex justify-center pt-5 pb-5">
-        <h1 className={title()}>Sponsers</h1>
+        <h1 className={title()}>Powered by</h1>
       </div>
       <div className="flex gap-4 lg:flex-row flex-col items-center justify-center">
         {list.map((item, index) => (
