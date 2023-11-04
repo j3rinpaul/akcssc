@@ -132,17 +132,12 @@ export default function Home() {
       </div>
 
 
-      {/* <div className="m-5" id="register">
+       <div className="m-5" id="register">
         <section>
           <PricingCards />
         </section>
-      </div> */}
-      {/* 
-      <div>
-        <section>
-          <Maps />
-        </section>
-      </div> */}
+      </div> 
+
     </div>
   );
 }
