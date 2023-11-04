@@ -1,4 +1,4 @@
-// PricingCards.js file
+"use client"
 import { title } from "@/components/primitives";
 import React from "react";
 
@@ -20,7 +20,7 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/pJNFEHR.png",
       title: "IEEE Member",
-      price: " 900",
+      price: " ₹1000",
       features: [
         "Sessions and Talks",
         "Goodies",
@@ -33,7 +33,7 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/Ql4jRdB.png",
       title: "IEEE CS Member",
-      price: "800 ",
+      price: "₹900 ",
       features: [
         "Sessions and Talks",
         "Goodies",
@@ -46,7 +46,7 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/Hg0sUJP.png",
       title: "Non-IEEE Member",
-      price: "1000 ",
+      price: "₹1100 ",
       features:[
         "Sessions and Talks",
         "Goodies",
