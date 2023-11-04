@@ -52,7 +52,7 @@ function Footer() {
                 })}
               </div>
               <p className="text-[16px] font-medium text-[#646464]">
-                Privacy Policy | © {new Date().getFullYear()} IEEE CSKS <br />{" "}
+                Privacy Policy | © {new Date().getFullYear()} IEEE CSKS  <br />{" "}
                 Design by{" "}
                 <a
                   target="_blank"
@@ -72,12 +72,12 @@ function Footer() {
 
               <Link href={"https://www.ieee.org/"}>
               <p className="text-[16px] hover:text-green-400 cursor-pointer text-[#646464] font-medium hover:font-bold">
-                IEEE 
+                IEEE. 
               </p>
               </Link>
               <Link href={"https://www.computer.org/"}>
               <p className="text-[16px] hover:text-green-400 cursor-pointer text-[#646464] font-medium hover:font-bold">
-                IEEE Computer Society 
+                IEEE Computer Society. 
               </p>
               </Link>
               
