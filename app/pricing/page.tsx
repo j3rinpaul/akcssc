@@ -27,7 +27,7 @@ const PricingCards = () => {
         "Food",
         "Networking Opportunity.",
         "Culturals",
-        "IEEE Membership Benefits",
+        "Trekking to Muneeswaran hills",
       ],
     },
     {
@@ -40,7 +40,7 @@ const PricingCards = () => {
         "Food",
         "Networking Opportunity.",
         "Culturals",
-        "IEEE Membership Benefits",
+        "Trekking to Muneeswaran hills",
       ],
     },
     {
@@ -53,7 +53,7 @@ const PricingCards = () => {
         "Food",
         "Networking Opportunity.",
         "Culturals",
-        
+        "Trekking to Muneeswaran hills",
       ],
     },
   ];
