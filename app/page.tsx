@@ -99,7 +99,7 @@ export default function Home() {
             variant: "shadow",
           })}
         >
-          <span style={{ color: "white" }}>Brouchure</span>
+          <span style={{ color: "white" }}>Brochure</span>
         </Link>
       </div>
 
