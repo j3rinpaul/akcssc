@@ -6,7 +6,7 @@ import { Twitter, Facebook, Linkedin, Instagram } from 'react-feather'; // Impor
 
 const Footers = () => {
   return (
-    <footer className="bg-slate-950 text-white  py-4">
+    <footer className="bg-slate-950 text-white  py-2">
       <div className="container mx-auto flex justify-center items-center">
         <ul className="flex space-x-4">
          

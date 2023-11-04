@@ -12,6 +12,7 @@ import Aboutcsks from "./aboutcsks/page";
 import Head from "next/head";
 import Maps from "./blog/page";
 import Sponser from "./docs/page";
+import Footers from "./blog/page";
 
 export default function Home() {
   const dissolvingEffectStyle = {
@@ -19,11 +20,11 @@ export default function Home() {
       "linear-gradient(90deg, transparent, transparent 20%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0.5) 60%, transparent 80%, transparent)",
   };
 
-  const handleDownload = () =>{
-      const downloadLink = document.createElement('a');
-      downloadLink.href = "/brouchure.pdf";
-      downloadLink.download = "brouchure.pdf";
-      downloadLink.click();
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/brouchure.pdf";
+    downloadLink.download = "brouchure.pdf";
+    downloadLink.click();
   };
 
   const textGradientStyle = {
@@ -34,11 +35,15 @@ export default function Home() {
   };
   return (
     <div>
-       <Head>
+      <Head>
         <title>Akcssc</title>
-        <meta property="og:title" content="All kerala computer society student convention" key="title" />
+        <meta
+          property="og:title"
+          content="All kerala computer society student convention"
+          key="title"
+        />
       </Head>
-     
+
       <div className="flex flex-wrap justify-evenly gap-8 lg:py-10">
         <section className="flex flex-col justify-start  gap-4 py-0 pb-0 md:py-16 max-w-3xl text-center ">
           <div className="mb-md px-0 lg:pt-16 md:pt-1 md:pb-1">
@@ -75,7 +80,6 @@ export default function Home() {
       </div>
       <div className="flex gap-3 pt-8 lg:pt-3 pr-2 mb-10 justify-center">
         <Link
-          isExternal
           as={NextLink}
           href={"#register"}
           className={buttonStyles({
@@ -84,11 +88,9 @@ export default function Home() {
             variant: "shadow",
           })}
         >
-          <span style={{ color: "white" }}>Registration Soon</span>
+          <span style={{ color: "white" }}>Register Now</span>
         </Link>
         <Link
-
-          
           onClick={handleDownload}
           href={""}
           className={buttonStyles({
@@ -125,19 +127,23 @@ export default function Home() {
         </section>
       </div>
 
-      <div >
-        <section >
-            <Sponser/>
+      <div>
+        <section>
+          <Sponser />
         </section>
       </div>
 
-
-       <div className="m-5" id="register">
+      <div className="" id="register">
         <section>
           <PricingCards />
         </section>
-      </div> 
+      </div>
 
+      {/* <div className="lg:pt-[10rem] lg:mt-16">
+        <section>
+          <Footers />
+        </section>
+      </div> */}
     </div>
   );
 }
