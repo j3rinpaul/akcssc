@@ -84,7 +84,7 @@ export default function Home() {
             variant: "shadow",
           })}
         >
-          <span style={{ color: "white" }}>Register Now</span>
+          <span style={{ color: "white" }}>Registration Soon</span>
         </Link>
         <Link
 
