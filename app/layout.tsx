@@ -9,6 +9,7 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Footers from "./blog/page";
+import Footer from "./blog/page";
 
 // export const metadata: Metadata = {
 // 	title: {
@@ -49,6 +50,7 @@ export default function RootLayout({
 						<main className="container mx-auto max-w-7xl sm:pt-10 pt-16 lg:px-6 px-1 flex-grow">
 							{children}
 						</main>
+						<Footer/>
 					</div>
 				</Providers>
 			</body>

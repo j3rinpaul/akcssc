@@ -40,7 +40,7 @@ export const Navbar = () => {
         <ul className="hidden lg:flex gap-10 justify-start ml-1">
 		{siteConfig.navItems.map((item, index) => (
           <NavbarItem key={item.href}>
-            <NextLink
+              <NextLink
               style={LinkStyles(index === activeLink)}
               color="foreground"
               onClick={() => setActiveLink(index)} // Update the active link on click
