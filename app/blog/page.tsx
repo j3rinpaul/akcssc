@@ -52,7 +52,7 @@ function Footer() {
                 })}
               </div>
               <p className="text-[16px] font-medium text-[#646464]">
-                Privacy Policy | © {new Date().getFullYear()} CSKS <br />{" "}
+                Privacy Policy | © {new Date().getFullYear()} IEEE CSKS <br />{" "}
                 Design by{" "}
                 <a
                   target="_blank"
