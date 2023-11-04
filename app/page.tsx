@@ -90,7 +90,7 @@ export default function Home() {
         >
           <span style={{ color: "white" }}>Register Now</span>
         </Link>
-        {/* <Link
+        <Link
           onClick={handleDownload}
           href={""}
           className={buttonStyles({
@@ -100,7 +100,7 @@ export default function Home() {
           })}
         >
           <span style={{ color: "white" }}>Brochure</span>
-        </Link> */}
+        </Link>
       </div>
 
       <div className="pt-16 mt-16 pb-10 mb-16 pl-5 pr-5 lg:pl-0" id="about">
