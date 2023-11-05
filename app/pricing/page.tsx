@@ -20,7 +20,7 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/pJNFEHR.png",
       title: "IEEE Member",
-      price: " ₹1100",
+      price: " ₹1200",
       features: [
         "Sessions and Talks",
         "Goodies",
@@ -33,7 +33,7 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/Ql4jRdB.png",
       title: "IEEE CS Member",
-      price: "₹100 ",
+      price: "₹1100 ",
       features: [
         "Sessions and Talks",
         "Goodies",
@@ -46,7 +46,7 @@ const PricingCards = () => {
     {
       image: "https://i.imgur.com/Hg0sUJP.png",
       title: "Non-IEEE Member",
-      price: "₹1200 ",
+      price: "₹1300 ",
       features:[
         "Sessions and Talks",
         "Goodies",
