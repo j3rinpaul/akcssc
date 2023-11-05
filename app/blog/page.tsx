@@ -3,6 +3,7 @@ import { AiFillLinkedin, AiFillInstagram,AiOutlineLink} from "react-icons/ai";
 import { BiLogoPinterestAlt } from "react-icons/bi";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 function Footer() {
   const iconsTab = [
@@ -29,7 +30,7 @@ function Footer() {
                 alt="footer_logo"
                 width={100}
                 height={100}
-                className="w-[18rem]"
+                className="w-[8rem]"
               />
               
               {/* socials */}
