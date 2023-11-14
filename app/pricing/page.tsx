@@ -90,7 +90,7 @@ const PricingCards = () => {
             <button
               onClick={() => {
                 window.open(
-                  "https://www.yepdesk.com/embed/buy-tickets/653fe35f46e0fb00013cc485/private/q11rmir4hh",
+                  "https://forms.gle/pUzSGCPhSs6MC7C66",
                   "_blank"
                 );
               }}
