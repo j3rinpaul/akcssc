@@ -90,7 +90,7 @@ const PricingCards = () => {
             <button
               onClick={() => {
                 window.open(
-                  "https://forms.gle/pUzSGCPhSs6MC7C66",
+                  "https://forms.gle/pUzSGCPhSs6MC7C66" ,
                   "_blank"
                 );
               }}
