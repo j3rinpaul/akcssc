@@ -60,7 +60,7 @@ const PricingCards = () => {
   return (
     <div className="w-full lg:max-h-[25rem] px-4 ">
       <div className="flex justify-center pt-5 pb-5">
-        <h1 className={title()}>Ticket - Early Bird</h1>
+        <h1 className={title()}>Ticket </h1>
       </div>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 ">
         {cardData.map((card, index) => (
